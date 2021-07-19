@@ -1,5 +1,6 @@
 body {
     background: rgb(30, 30, 30);
+    margin: 0;
 }
 
 h1 {
@@ -16,11 +17,15 @@ h2 {
     padding: 40px;
     text-align: left;
     line-height: 30px;
-    background: rgb(30, 30, 30);
+    background: rgb(40, 40, 40);
     font-size: 30px;
 }
 
 .line_seperator {
     padding: 4px;
     background: rgb(230, 248, 227);
+}
+
+img {
+    width: 100%;
 }
