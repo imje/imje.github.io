@@ -1,15 +1,15 @@
 h1 {
-    color:pink;
+    color:rgb(247, 163, 255);
 }
 
 h2 {
-    color: purple;
+    color: rgb(230, 248, 227);
 }
 
 .header{
-    padding: 60px;
-    text-align: center;
-    background: darkgrey;
-    color: black;
+    padding: 40px;
+    text-align: left;
+    line-height: 20px;
+    background: darkseagreen;
     font-size: 30px;
 }
