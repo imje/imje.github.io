@@ -23,18 +23,25 @@ a {
     height: 48px;
 }
 
-.pencil_div {
-    margin: 173px 45px 45px 45px;
+.img_div {
+    margin: 273px 45px 45px 145px;
+}
+
+.pencil_writing {
+    margin-top: -40px;
+    margin-left: -105px;
+    max-width: 500px;
+    height:auto;
+    position: absolute;
 }
 
 .pencil {
-    max-width:100%;
+    max-width: 100%;
     max-height: 100%;
     height:auto;
-
 }
 
-ul {
+header {
     list-style-type: none;
     margin: 0;
     padding: 40px 40px;
