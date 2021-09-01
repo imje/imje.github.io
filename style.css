@@ -1,6 +1,8 @@
 
 body {
     background: blanchedalmond;
+    background-color: #ffebcd;
+background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
     /*background-image: linear-gradient(to bottom right, #f2f2f2,#a2ceec);*/
     margin: 0;
 }
@@ -15,7 +17,7 @@ a {
     float: none;
     position: absolute;
     top: 50%;
-    left: 47%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -23,14 +25,26 @@ a {
     height: 48px;
 }
 
-.img_div {
+.pencil_div {
     margin: 273px 45px 45px 145px;
+}
+
+.pencil_2_div {
+    margin: 273px 145px 45px 45px;
 }
 
 .pencil_writing {
     margin-top: -40px;
     margin-left: -105px;
     max-width: 500px;
+    height:auto;
+    position: absolute;
+}
+
+.pencil_writing_2 {
+    margin-top: -40px;
+    right: 40px;
+    max-width: 400px;
     height:auto;
     position: absolute;
 }
@@ -46,14 +60,23 @@ header {
     margin: 0;
     padding: 40px 40px;
     overflow: hidden;
-    background-color: none;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
+    -webkit-transition: all ease-out .9s;
+    -moz-transition: all ease-out .9s;
+    -o-transition: all ease-out .9s;
+    transition: all ease-out .9s;
   }
+
+  .active_scroll { 
+      background-color: rgba(255, 255, 255, 0.7);
+    }
 
   li {
     float: left;
+    background: transparent;
   }
   
   li a {
@@ -69,6 +92,3 @@ header {
     text-decoration-color: lightskyblue;
   }
   
-  .active {
-    background-color: lightskyblue;
-  }
