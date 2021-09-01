@@ -67,12 +67,19 @@ header {
     -webkit-transition: all ease-out .9s;
     -moz-transition: all ease-out .9s;
     -o-transition: all ease-out .9s;
-    transition: all ease-out .9s;
+    transition: all ease-out .9s; 
   }
 
-  .active_scroll { 
-      background-color: rgba(255, 255, 255, 0.7);
+.scroll_down { 
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s .3s, opacity .3s linear;
     }
+
+.scroll_up { 
+    background-color: rgba(255, 255, 255, 0.7);
+    }
+
 
   li {
     float: left;
