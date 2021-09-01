@@ -1,6 +1,6 @@
 
 body {
-    background: #f2f2f2;
+    background: blanchedalmond;
     /*background-image: linear-gradient(to bottom right, #f2f2f2,#a2ceec);*/
     margin: 0;
 }
@@ -49,10 +49,16 @@ h3 {
     background-color: inherit;
 }
 
-.pencil_outline {
-    height: 800px;
+.pika {
+    height: 80px;
     position: absolute;
     top: 10px;
     right: 0px;
 }
 
+.logo {
+    height: 48px;
+    position: absolute;
+    top: 40px;
+    left: 45px;
+}
