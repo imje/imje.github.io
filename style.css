@@ -5,60 +5,63 @@ body {
     margin: 0;
 }
 
-h1 {
-    color:#000000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
-}
-
-h2 {
+a {
     color:black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
-h2:hover, h3:hover{
-    /*background-color: #F27280;*/
-    color: #f2f2f2;
-    font-size: 25px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-h3 {
-    color:#f2f2f2;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.header {
-    position: relative;
-    left: 40px;
-    top: 40px;
-}
-
 .menu {
-    position: relative;
-    left: 40px;
-    top: 100px;
-}
-
-.btn {
-    line-height: 10px;
-    border: none;
-    background-color: inherit;
-}
-
-.pika {
-    height: 80px;
+    float: none;
     position: absolute;
-    top: 10px;
-    right: 0px;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
 }
 
 .logo {
     height: 48px;
-    position: absolute;
-    top: 40px;
-    left: 45px;
 }
+
+.pencil_div {
+    margin: 173px 45px 45px 45px;
+}
+
+.pencil {
+    max-width:100%;
+    max-height: 100%;
+    height:auto;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 40px 40px;
+    overflow: hidden;
+    background-color: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 30px 80px 0px 80px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    text-decoration: overline;
+    text-decoration-color: lightskyblue;
+  }
+  
+  .active {
+    background-color: lightskyblue;
+  }
