@@ -1,34 +1,74 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>IM - Design Portofolio</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    
-    <header class="header">
-        <li><img class="logo" src="/images/logo.png" alt="Logo with the letters i and m."></li>
-        <div class="menu">
-            <li><a class="work" href="/pages/work.html">Work</a></li>
-            <li><a class="about" href="/pages/about.html">About</a></li>
-            <li><a class="contact" href="/pages/contact.html">Contact</a></li>
+
+<body style="background-color:#fbf6f1">
+
+    <div class="p-5">
+        <div class="container mx-auto flex items-center justify-between">
+            <img src="./imageHomePage/logo.svg" width="208" />
+            <nav>
+                <ul class="flex items-center">
+                    <li>
+                        <a href="#" class="px-4 py-3 transition 
+                        hover:bg-gray-200 rounded-md 
+                        avtive font-bold
+                        hover:text-black rounded-md flex
+                        md:inline-flex text-lg cursor-pointer
+                        hover:shadow-lg transition">Projects</a> 
+                    </li>
+                    <li>
+                        <a href="#" class="px-4 py-3 transition 
+                        hover:bg-gray-200 rounded-md text-lg border-b-2 border-transparent">About</a> 
+                    </li>
+                    <li>
+                        <a href="#" class="px-4 py-3 transition
+                        hover:bg-gray-200 rounded-md text-lg border-b-2 border-transparent">Contact</a> 
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </header>
 
-    <script src="/headerBackground.js"></script>
-
-    <div class="pencil_div">
-        <img class="pencil_writing" src="/images/pencil_writing.png" alt="Drawn text saying: pencil sharpener.">
-        <img class="pencil" src="/images/pencil.jpg" alt="Pixel art of pikachu, but derp.">
+        <div class="mx-auto flex flex-col items-center justify-center py-10">
+            <img src="./imageHomePage/profilbilde.svg" width="298"/>
+            <p class="text-center">Hi 👋 <br>
+            My name is Ingvild, and i’m an industrial designer. <br>
+            I enjoy making fun and helpful products for an optimal user experience!
+            </p>
+            
+        </div>
     </div>
-
-    <div class="pencil_2_div">
-        <img class="pencil_writing_2" src="/images/pencil_writing_2.png" alt="Drawn text saying: pencil sharpener.">
-        <img class="pencil" src="/images/pencil_colorful.jpg" alt="Pixel art of pikachu, but derp.">
+    <div class="mx-auto flex flex-col pt-20 pb-20 px-5 items-center justify-center" style="background-image: url('./imageHomePage/summer.jpg');">
+        <p class="pb-2 text-2xl font-bold text-center">Some projects</p>
+        <img src="./imageHomePage/pilNed.svg" width="20" class="pb-20"/>
+    
+        <div class="grid grid-cols-2 gap-x-40 gap-y-24 place-content-center pb-20">
+            <div style="background-color:#fbf6f1" class="w-80 h-80 flex flex-col items-center justify-between rounded-md">
+                <p class="text-xl pt-8 font-bold">Pencil Sharpener</p>
+                <img src="./imageHomePage/pencil.jpg" class="rounded-b-md h-60 w-full object-cover" />
+            </div>
+            <div style="background-color:#fbf6f1" class="w-80 h-80 flex flex-col items-center justify-between rounded-md">
+                <p class="text-xl pt-8 font-bold">Backpack Light</p>
+                <img src="./imageHomePage/bLight.svg" class="rounded-b-md h-60 w-full object-cover" />
+            </div>
+            <div style="background-color:#fbf6f1" class="w-80 h-80 flex flex-col items-center justify-between rounded-md">
+                <p class="text-xl pt-8 font-bold">Record Player</p>
+                <img src="./imageHomePage/player.jpg" class="rounded-b-md h-60 w-full object-cover" />
+            </div>
+            <div style="background-color:#fbf6f1" class="w-80 h-80 flex flex-col items-center justify-between rounded-md">
+                <p class="text-xl pt-8 font-bold">Drawings</p>
+                <img src="./imageHomePage/peach.png" class="rounded-b-md h-60 w-full object-cover" />
+            </div>
+        </div>
+        <a href="#" style="background-color:#FFFAC8" class="px-4 py-3 transition rounded-full
+                        rounded-md flex
+                        md:inline-flex font-medium text-lg cursor-pointer
+                        hover:shadow-lg transition">☀ See more fun ☀</a>
     </div>
-
 </body>
+
 </html>
