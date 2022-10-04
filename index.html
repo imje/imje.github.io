@@ -9,7 +9,7 @@
 <body style="background-color:#fbf6f1">
 
     <div class="p-5">
-        <div class="container mx-auto flex items-center justify-between">
+        <div class="container mx-auto flex sm:flex-row flex-col items-center justify-between">
             <img src="./imageHomePage/logo.svg" width="208" />
             <nav>
                 <ul class="flex items-center">
@@ -46,7 +46,7 @@
         <p class="pb-2 text-2xl font-bold text-center">Some projects</p>
         <img src="./imageHomePage/pilNed.svg" width="20" class="pb-20"/>
     
-        <div class="grid grid-cols-2 gap-x-40 gap-y-24 place-content-center pb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-40 gap-y-24 place-content-center pb-20">
             <div style="background-color:#fbf6f1" class="w-80 h-80 flex flex-col items-center justify-between rounded-md">
                 <p class="text-xl pt-8 font-bold">Pencil Sharpener</p>
                 <img src="./imageHomePage/pencil.jpg" class="rounded-b-md h-60 w-full object-cover" />
@@ -69,6 +69,12 @@
                         md:inline-flex font-medium text-lg cursor-pointer
                         hover:shadow-lg transition">☀ See more fun ☀</a>
     </div>
+
+
+    <footer class="p-4 bg-black shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"> 
+        </span>
+    </footer>
 </body>
 
 </html>
