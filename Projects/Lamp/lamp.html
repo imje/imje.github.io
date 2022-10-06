@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color:#fbf6f1" class="flex flex-col min-h-screen">
+
+    <!--Header-->
+
+    <div class="p-5">
+        <div class="container mx-auto flex sm:flex-row flex-col items-center justify-between">
+            <ul class="flex items-center sm:pt-0 pt-5">
+                <li class="pr-4">
+                    <img src="/logo.png" alt="" width="35">
+                </li>
+                <li>
+                    <a href="/index.html"> <img src="/imageHomePage/logo.svg" width="208" alt=""></a>
+                </li>
+            </ul>
+            
+            <nav>
+                <ul class="flex items-center sm:pt-0 pt-5">
+                    <li>
+                        <a href="/index.html" class="px-4 py-3 transition 
+                        rounded-md text-lg cursor-pointer
+                        hover:bg-green-100 hover:shadow-lg 
+                        transition">Home</a> 
+                    </li>
+                    <li>
+                        <a href="/projects.html" class="px-4 py-3 transition 
+                        font-bold rounded-md text-lg cursor-pointer
+                        hover:bg-green-100 hover:shadow-lg 
+                        transition">Projects</a> 
+                    </li>
+                    <li>
+                        <a href="/about.html" class="px-4 py-3 transition 
+                        rounded-md text-lg cursor-pointer
+                        hover:bg-green-100 hover:shadow-lg 
+                        transition">About</a> 
+                    </li>
+                    <li>
+                        <a href="/contact.html" class="px-4 py-3 transition 
+                        rounded-md text-lg cursor-pointer
+                        hover:bg-green-100 hover:shadow-lg 
+                        transition">Contact</a> 
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--Project Header-->
+    
+    <div class="pt-8 lg:pt-16 px-4 mx-auto max-w-screen-md felx items-center">
+        <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Backpack Light</h2>
+        <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">A small light for childrens backpacks</p>     
+    </div>
+
+    <!--Main Photo-->
+
+    <img src="./images/reflexisa.138.png" width="100%" alt="">
+
+    <!--Project Description-->
+
+    <div style="background-image: url('/imageHomePage/summer.jpg');" class="py-20 px-20">
+
+        <h2 class="mb-4 text-2xl tracking-tight font-bold text-left text-gray-900">Project description</h2>
+            <p>
+                The project was to create a backpack light for children, so that they are more visible in the dark.
+                The light should shine continousley when turned on. 
+                It is powered by 2 x CR1220 batteries, and they must be replacable.
+                The light is price sensitive, so it should have a simple production process.
+                The project was done over four weeks.
+            </p>
+    </div>
+
+    <!--Research-->
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-40 gap-y-24 place-content-center py-20 px-20">
+        <div>
+            <img src="./images/user.jpg" width="300" alt="">
+            <p></p>
+        </div>
+        <div>
+            <h2 class=" mb-4 text-2xl tracking-tight font-bold text-left text-gray-900">Research</h2>
+            <h3 class="mb-4 text-xl tracking-tight font-bold text-left text-gray-900">The user</h3>
+            <p>The taget user is a first grader (6 years old).
+                From doing some research on toys for children and making a moodboard, the key qualities I wanted the light to have was:
+                <li>
+                    Vibrant colors
+                </li>
+                <li>
+                    A simple shape
+                </li>
+                <br>
+                Children are creative and when seeing simple shapes, they can imagine it to be many things. Therefor I chose not to make e.g. a unicorn shaped light. Then it would only be the children that like unicorns that would want the light.
+            </p>
+        </div>
+        <div>
+            <img src="./images/researchLamp.jpg" width="300" alt="">
+        </div>
+        <div>
+            <h3 class="mb-4 text-xl tracking-tight font-bold text-left text-gray-900">Existing lights</h3>
+            <p>
+                One of the light I disassambled was cheap, but worked well. The technical design was well done, but the estetic was not to good in my opinion.
+                The light was combined of many parts, and when changing the batteries it would be a little difficult to put it back together.
+                It was difficult to understand if you should push the button or slide it to turn the light on. 
+                The light did not light up well.
+                <br>
+                <br>
+                Another light I looked at was rechargable and had a more figurative design. As staded in the research this was not desireable.
+
+            </p>
+        </div>
+    </div>
+
+    <!--Ideation-->
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-40 gap-y-24 place-content-center py-20 px-20">
+        <div>
+            <h2 class="mb-4 text-2xl tracking-tight font-bold text-left text-gray-900">Ideation</h2>
+            <h3 class="mb-4 text-xl tracking-tight font-bold text-left text-gray-900">Shape</h3>
+            <p>I stared out with drawing several ideas. 
+                <br><br>
+                In the first scetch the light would only emit on one side of the light. This would be a problem if the light turned while dangeling on the backpack.
+                This could be solved by using a strap to fix the light tight to the backpack, or as I chose to do: have the light emit on all sides.
+                <br><br>
+                I also scetched different shapes, and ended up with a rectangular prism with rounded edges.
+                <br><br>
+                I also wanted the light to have a function even if it was turned off. This was because I think it is not easy to always remember to turn the ligh on.
+                Therefor I chose to integrate a reflective surface on each side of the prism.
+            </p>
+        </div>
+        <div class="grid grid-cols-2 gap-x-4 gap-y-4 place-content-center">
+            <img src="./images/oneSideLamp.jpg" width="100%" alt="">
+            <img src="./images/organic.jpg" width="100%" alt=""> 
+        </div>
+            
+        
+
+        <div>
+            <h3 class="mb-4 text-xl tracking-tight font-bold text-left text-gray-900">Size</h3>
+            <p>
+                I carved out some different shapes in foam to look at both the shape in 3D and to figure out the size of the light. First 
+                The light ended up with being 30mm tall, 20mm wide and 15mm in depth.
+                <br><br>
+            </p>
+        </div>
+        <div class="grid grid-cols-2 gap-x-4 gap-y-4 place-content-center">
+            <img src="./images/foamPrototypes.jpg" width="100%" alt="">
+            <img src="./images/differentPrints.jpg" width="100%" alt="">
+        </div>
+
+        <div>
+            <h3 class="mb-4 text-xl tracking-tight font-bold text-left text-gray-900">Details</h3>
+            <p>
+                The lamp is only assabled with snaps.
+                <br><br>
+                Inside the lamp there are gussets to hold the pcb in place and to strengthen the structure.
+                <br><br>
+                To hang the light on the backpack there is a velcro streap attached to the PCB and threaded trough a hole in the prism. All the holes on the lamp is placed on the parting line to make the production prosess as cheep as possible.
+            </p>
+        </div>
+        <div class="grid grid-cols-2 gap-x-4 gap-y-4 place-content-center">
+            <img src="./images/openModel.jpg" width="100%" alt="">
+        </div>
+        
+    </div>
+
+    <!--Prototyping-->
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-40 gap-y-24 place-content-center py-20 px-20">
+        <div class="grid grid-cols-2 gap-x-4 gap-y-4 place-content-center">
+            <img src="./images/onBackpack.jpg" width="100%" alt="">
+            <img src="./images/prototypeGreen.jpg" width="100%" alt="">
+        </div>
+        <div>
+            <h2 class="mb-4 text-2xl tracking-tight font-bold text-left text-gray-900">Prototyping</h1>
+            <p>The main method of prototyping used is 3D-printing. I did not manage to 3D-print a reflective surface, 
+                so how the final product shoud look is represented in the renders below. The print was used to show functionality and assambly, and also to determin if the different details worked. </p>
+        </div>
+    </div>
+
+    <!--The Final Product-->
+
+    <div style="background-image:url('/imageHomePage/summer.jpg');" class="py-20 px-20">
+        <h2 class="mb-4 text-2xl tracking-tight font-bold text-left text-gray-900">The final product</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-40 gap-y-24 place-content-center pt-5 pb-20">
+            <div>
+                <h3 class="mb-4 text-xl tracking-tight font-bold text-left text-gray-900">Material</h3>
+                <p>
+                    Polymethylmethacrylate (PMMA). Better known as acrylic. PMMA is recyclable, shatter-resistant, clear and can be any color.
+                </p>
+            </div>
+            <div>
+                <h3 class="mb-4 text-xl tracking-tight font-bold text-left text-gray-900">Production method</h3>
+                <p>
+                    Injection molding. Pull direction along one axis on all parts. The parts are put together in a sandwitch assambly.
+                </p>
+            </div>
+        </div>
+        <img src="./images/finishedRender.jpg" width="100%" alt="">
+        <img src="./images/reflexisa.140.png" width="100%" alt="">
+        <img src="./images/reflexisa.141.png" width="100%" alt="">
+        
+ 
+    </div>
+
+    <!--Footer-->
+
+    <footer class="mt-auto p-4 bg-black shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            💚
+        </span>
+    </footer>
+
+</body>
+
+</html>
