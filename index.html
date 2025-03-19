@@ -13,20 +13,21 @@
         .custom-border {
             border: 2px solid #A35344;
         }
-        @keyframes gentle-shake {
-            0%, 100% { transform: translateX(0); }
-            25% { transform: translateX(-2px); }
-            75% { transform: translateX(2px); }
+        @keyframes gentle-rock {
+            0% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg); }
+            100% { transform: rotate(-3deg); }
         }
         @keyframes slow-spin {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
         .list-container:hover .shake-text {
-            animation: gentle-shake 2s ease-in-out infinite;
+            animation: gentle-rock 1.5s ease-in-out infinite;
+            display: inline-block;
         }
         .list-container:hover .spin-point {
-            animation: slow-spin 4s linear infinite;
+            animation: slow-spin 3.0s linear infinite;
             display: inline-block;
         }
     </style>
