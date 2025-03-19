@@ -6,12 +6,36 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Ingvild Mjelva</title>
     <link rel="icon" type="image/x-icon" href="/logo.png">
+    <style>
+        .hover-peach:hover {
+            background-color: #F3C697;
+        }
+        .custom-border {
+            border: 2px solid #A35344;
+        }
+        @keyframes gentle-shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-2px); }
+            75% { transform: translateX(2px); }
+        }
+        @keyframes slow-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .list-container:hover .shake-text {
+            animation: gentle-shake 2s ease-in-out infinite;
+        }
+        .list-container:hover .spin-point {
+            animation: slow-spin 4s linear infinite;
+            display: inline-block;
+        }
+    </style>
 </head>
 
 <body style="background-color:#F9F6F1">
 
-    <div class="p-5">
-        <div class="container mx-auto flex sm:flex-row flex-col items-center justify-between">
+    <div class="pb-0 pt-4">
+        <div class="container mx-auto flex sm:flex-row flex-col items-center justify-between px-5">
             <ul class="flex items-center sm:pt-0 pt-5">
                 <li class="pr-4">
                     <img src="/logo.png" alt="" width="35">
@@ -22,41 +46,56 @@
                     <li>
                         <a href="./index.html" class="px-4 py-3 transition 
                         rounded-md text-lg cursor-pointer
-                        font-bold hover:bg-green-100 hover:shadow-lg 
+                        font-bold hover-peach hover:shadow-lg 
                         transition">Home</a> 
                     </li>
                     <li>
                         <a href="./projects.html" class="px-4 py-3 transition 
                         rounded-md text-lg cursor-pointer
-                        hover:font-bold hover:bg-green-100 hover:shadow-lg 
+                        hover:font-bold hover-peach hover:shadow-lg 
                         transition">Projects</a> 
                     </li>
                     <li>
                         <a href="./about.html" class="px-4 py-3 transition 
                         rounded-md text-lg cursor-pointer
-                        hover:font-bold hover:bg-green-100 hover:shadow-lg 
+                        hover:font-bold hover-peach hover:shadow-lg 
                         transition">About</a> 
                     </li>
                     <li>
                         <a href="./contact.html" class="px-4 py-3 transition 
                         rounded-md text-lg cursor-pointer
-                        hover:font-bold hover:bg-green-100 hover:shadow-lg 
+                        hover:font-bold hover-peach hover:shadow-lg 
                         transition">Contact</a> 
                     </li>
                 </ul>
             </nav>
         </div>
 
-        <div class="mx-auto flex flex-col items-center justify-center py-10">
+        <div class="mx-auto flex flex-col items-center justify-center py-10 px-5">
             <img src="./Projects/Drawings/images/me.png" width="298"/>
             <p class="text-center">Hi 👋 <br>
-            My name is Ingvild, and i'm an industrial designer based in Trondheim. <br>
+            My name is Ingvild, and I'm an industrial designer based in Trondheim. <br>
             I enjoy making joyful and helpful products for an optimal user experience!
             </p>
         </div>
-        <hr class="w-48 h-1 mx-auto bg-gray-300 border-0 rounded my-8">
+
+        <div class="w-full pt-8 -mb-0">
+            <hr class="w-full border-t border-gray-800">
+            <div class="flex justify-between px-5 py-4 overflow-x-auto whitespace-nowrap list-container">
+                <span class="text-gray-800 shake-text">Industrial Design</span>
+                <span class="text-gray-800 spin-point">✹</span>
+                <span class="text-gray-800 shake-text">Digital product development</span>
+                <span class="text-gray-800 spin-point">✹</span>
+                <span class="text-gray-800 shake-text">3D</span>
+                <span class="text-gray-800 hidden sm:inline spin-point">✹</span>
+                <span class="text-gray-800 hidden sm:inline shake-text">Consultant</span>
+                <span class="text-gray-800 hidden sm:inline spin-point">✹</span>
+                <span class="text-gray-800 hidden sm:inline shake-text">Based in Trondheim</span>
+            </div>
+            <hr class="w-full border-t border-gray-800">
+        </div>
     </div>
-    <div class="mx-auto flex flex-col pt-20 pb-20 px-5 items-center justify-center" style="background-color:#CED09A">
+    <div class="mx-auto flex flex-col pt-8 pb-20 px-5 items-center justify-center" style="background-color:#CED09A">
         <p class="pb-2 text-2xl font-bold text-center">Some projects</p>
         <img src="./imageHomePage/pilNed.svg" width="20" class="pb-20"/>
     
@@ -79,7 +118,7 @@
             </a>
         </div>
         <a href="./projects.html" style="background-color:#F3C697" class="px-4 py-3 transition rounded-full
-                        rounded-md flex
+                        rounded-md flex custom-border
                         md:inline-flex font-medium text-lg cursor-pointer
                         hover:shadow-lg transition">☀ See more projects ☀</a>
     </div>
