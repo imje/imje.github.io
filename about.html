@@ -6,18 +6,20 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Ingvild - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/logo.png">
+    <style>
+        .hover-peach:hover {
+            background-color: #F3C697;
+        }
+    </style>
 </head>
 
 <body style="background-color:#fbf6f1">
 
-    <div class="p-5">
-        <div class="container mx-auto flex sm:flex-row flex-col items-center justify-between">
+    <div class="pb-0 pt-4">
+        <div class="container mx-auto flex sm:flex-row flex-col items-center justify-between px-5">
             <ul class="flex items-center sm:pt-0 pt-5">
                 <li class="pr-4">
                     <img src="/logo.png" alt="" width="35">
-                </li>
-                <li>
-                    <a href="/index.html"> <img src="/imageHomePage/logo.svg" width="208" alt=""></a>
                 </li>
             </ul>
             <nav>
@@ -25,25 +27,25 @@
                     <li>
                         <a href="./index.html" class="px-4 py-3 transition 
                         rounded-md text-lg cursor-pointer
-                        hover:bg-green-100 hover:shadow-lg 
+                        hover-peach hover:shadow-lg 
                         transition">Home</a> 
                     </li>
                     <li>
                         <a href="./projects.html" class="px-4 py-3 transition 
                         rounded-md text-lg cursor-pointer
-                        hover:font-bold hover:bg-green-100 hover:shadow-lg 
+                        hover-peach hover:shadow-lg 
                         transition">Projects</a> 
                     </li>
                     <li>
                         <a href="#" class="px-4 py-3 transition 
                         rounded-md text-lg cursor-pointer
-                        font-bold hover:font-bold hover:bg-green-100 hover:shadow-lg 
+                        font-bold hover-peach hover:shadow-lg 
                         transition">About</a> 
                     </li>
                     <li>
                         <a href="./contact.html" class="px-4 py-3 transition 
                         rounded-md text-lg cursor-pointer
-                        hover:font-bold hover:bg-green-100 hover:shadow-lg 
+                        hover-peach hover:shadow-lg 
                         transition">Contact</a> 
                     </li>
                 </ul>
@@ -55,64 +57,97 @@
     
     <div class="pt-8 lg:pt-16 px-6 mx-auto max-w-screen-md felx items-center">
         <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">About me</h2>
-        <p class="mb-4 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Ingvild</p>     
+        <p class="mb-4 font-light text-center text-gray-600 dark:text-gray-600 sm:text-xl">Ingvild</p>     
     </div>
 
     <!--About me-->
 
         <div class="mx-auto flex px-6 flex-col items-center justify-center">
             <img src="./Projects/Drawings/images/me.png" width="298"/>
-            <p class="mb-10 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Experience with the entire design process, universal design, GDPR and user testing.
-                Good experience with interdisciplinary teamwork.</p>     
+            <p class="mb-10 font-light text-center text-gray-600 dark:text-gray-600 sm:text-xl">Experience with the entire design process, storytelling, universal design and user testing. </br>
+                Good experience designing websites and physical products.</p>     
 
         </div>
+
+           <!--Work-->
+        
+    <div class="mx-auto flex flex-col pt-8 pb-4 px-6" style="background-color: #CED09A;">
+        <div class="pt-8 px-4 mx-auto max-w-screen-md felx items-center">
+            <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Work</h2>     
+        </div>
+        <div class="grid grid-cols-2 grid-rows-4 lg:gap-x-4 gap-x-4 gap-y-4 place-content-center pt-5">
+            <div>
+                <p class="font-regular text-right text-gray-900 sm:text-xl">2023 - present</p>
+            </div>
+            <div>
+                <p class="mb-2 font-regular text-left text-gray-900 sm:text-xl">Designer at Bekk</p>
+            </div>
+            <div>
+                <p class="font-regular text-right text-gray-900 sm:text-xl">2024 - present</p>
+            </div>
+            <div>
+                <p class="mb-2 font-regular text-left text-gray-900 sm:text-xl">Chairperson of the board at IxDA Trondheim</p>
+            </div>
+            <div>
+                <p class="font-regular text-right text-gray-900 sm:text-xl">2021 - 2023</p>
+            </div>
+            <div>
+                <p class="mb-2 font-regular text-left text-gray-900 sm:text-xl">Designer at Nav (part time)</p>
+            </div>
+            <div>
+                <p class="font-regular text-right text-gray-900 sm:text-xl">2021</p>
+            </div>
+            <div>
+                <p class="mb-2 font-regular text-left text-gray-900 sm:text-xl">Design at Nav (summer internship)</p>
+            </div>
+        </div>
+    </div>
+
 
     <!--Education-->
         
-    </div>
-    <div class="mx-auto flex flex-col pt-5 px-6" style="background-image: url('./imageHomePage/summer.jpg');">
+    <div class="mx-auto flex flex-col pt-0 px-6" style="background-color: #CED09A;">
         <div class="pt-8 px-4 mx-auto max-w-screen-md felx items-center">
-            <h1 class="mb-10 text-4xl tracking-tight font-extrabold text-center text-gray-900">Education</h2>     
+            <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Education</h2>     
         </div>
         <div class="grid grid-cols-2 grid-rows-3 lg:gap-x-4 gap-x-4 gap-y-4 place-content-center pt-5">
             <div>
-                <p class="font-regular text-right text-gray-900 sm:text-xl">2018 - present</p>
+                <p class="font-regular text-right text-gray-900 sm:text-xl">2018 - 2023</p>
             </div>
             <div>
                 <p class="mb-2 font-regular text-left text-gray-900 sm:text-xl">Master of Science, industrial Design Engeneering, NTNU</p>
-                <p class=" mb-10 font-light text-left text-gray-900 sm:text-xl">Specialization in product design. Gratuating in june 2023.</p>
+                <p class=" mb-10 font-light text-left text-gray-900 sm:text-xl">Specialization in product design.</p>
             </div>
             <div>
                 <p class="font-regular text-right text-gray-900 sm:text-xl">2016 - 2017</p>
             </div>
             <div>
                 <p class="mb-2 font-regular text-left text-gray-900 sm:text-xl">Master of Technology, Computer Science, NTNU</p>
-                <p class="font-light text-left text-gray-900 sm:text-xl">Completed 67.5 credits</p>
+                <p class="font-light text-left text-gray-900 sm:text-xl">Completed 67.5 credits.</p>
             </div>
         </div>
     </div>
 
     <!--Skills n Fun-->
         
-    </div>
-    <div class="mx-auto flex flex-col pb-5 px-6" style="background-image: url('./imageHomePage/summer.jpg');">
+    <div class="mx-auto flex flex-col pb-5 px-6" style="background-color: #CED09A;">
         
         <div class="grid sm:grid-cols-2 grid-cols-1 grid-rows-3 lg:gap-x-4 gap-x-4 gap-y-4 place-content-center">
             <div>
-                <h1 class="mb-10 text-4xl tracking-tight font-extrabold text-center text-gray-900">Skills</h2> 
-                <p class="mb-5 font-regular text-center text-gray-900 sm:text-xl">Figma, user testing, Adobe CC, CSS, HTML, JavaScript, Python.</p>    
+                <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Skills</h2> 
+                <p class="mb-5 font-regular text-center text-gray-900 sm:text-xl">Design process, 3D-modeling, storytelling, user testing, prototyping, Figma and Framer, Adobe CC, illustration on iPad, CSS, HTML, JavaScript.</p>    
             </div>
             <div>
-                <h1 class="mb-10 text-4xl tracking-tight font-extrabold text-center text-gray-900">Interests</h2> 
-                    <p class="mb-5 font-regular text-center text-gray-900 sm:text-xl">Bouldering, 3D-modelling, Minecract, reading, team sports.</p>  
+                <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Interests</h2> 
+                    <p class="mb-5 font-regular text-center text-gray-900 sm:text-xl">Bouldering, ceramics, knitting, reading, drawing and hiking.</p>  
             </div>
         </div>
     </div>
 
 
     <footer class="p-4 bg-black shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            💚 Made by Ingvild
+        <span class="text-sm text-gray-200 sm:text-center dark:text-gray-400">
+            ☀ Made by Ingvild
         </span>
     </footer>
 </body>
