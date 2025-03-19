@@ -33,7 +33,7 @@
     </style>
 </head>
 
-<body style="background-color:#F9F6F1">
+<body class="bg-[#CED09A] min-h-screen">
 
     <div class="pb-0 pt-4">
         <div class="container mx-auto flex sm:flex-row flex-col items-center justify-between px-5">
@@ -96,37 +96,105 @@
             <hr class="w-full border-t border-gray-800">
         </div>
     </div>
-    <div class="mx-auto flex flex-col pt-8 pb-20 px-5 items-center justify-center" style="background-color:#CED09A">
-        <p class="pb-2 text-2xl font-bold text-center">Some projects</p>
-        <img src="./imageHomePage/pilNed.svg" width="20" class="pb-20"/>
-    
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-40 gap-y-24 place-content-center pb-20">
-            <a href="./Projects/PencilSharpen/pencilSharpener.html" style="background-color:#fbf6f1" class="w-80 h-80 flex flex-col items-center justify-between rounded-md hover:shadow-lg cursor-pointer">
-                <p class="text-xl pt-8 font-bold">Pencil Sharpener</p>
-                <img src="./imageHomePage/pencil.jpg" class="rounded-b-md h-60 w-full object-cover" />
-            </a>
-            <a href="./Projects/Lamp/lamp.html" style="background-color:#fbf6f1" class="w-80 h-80 flex flex-col items-center justify-between rounded-md hover:shadow-lg">
-                <p class="text-xl pt-8 font-bold">Backpack Light</p>
-                <img src="./imageHomePage/bLight.svg" class="rounded-b-md h-60 w-full object-cover" />
-            </a>
-            <a href="./Projects/DigitalTools/digitalTools.html" style="background-color:#fbf6f1" class="w-80 h-80 flex flex-col items-center justify-between rounded-md hover:shadow-lg">
-                <p class="text-xl pt-8 font-bold">Digital Tools in School</p>
-                <img src="./Projects/DigitalTools/images/Startside.png" class="rounded-b-md h-60 w-full object-cover" />
-            </a>
-            <a href="./Projects/StressFreeExam/stressFreeExam.html" style="background-color:#fbf6f1" class="w-80 h-80 flex flex-col items-center justify-between rounded-md hover:shadow-lg">
-                <p class="text-xl pt-8 font-bold">Stress Free Exam</p>
-                <img src="./Projects/StressFreeExam/images/congrats.jpg" class="rounded-b-md h-60 w-full object-cover" />
-            </a>
+
+    <!-- Projects section with background -->
+    <section class="w-full pt-14" style="background-color: #CED09A;">
+
+        <!-- Projects grid -->
+        <div class="mx-auto flex flex-col pt-8 pb-20 px-10 items-center justify-center">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 w-full max-w-[1400px]">
+                <!-- Left column sections -->
+                <div class="col-span-1 md:col-span-8 grid grid-cols-1 gap-4">
+                    <!-- Pencil Sharpener -->
+                    <section class="flex flex-col bg-[#F9F6F1] rounded-lg overflow-hidden hover:shadow-lg transition" style="background-color: #F9F6F1;">
+                        <a href="./Projects/PencilSharpen/pencilSharpener.html" class="h-full flex flex-col">
+                            <div class="flex-grow">
+                                <img src="./imageHomePage/pencil.jpg" class="w-full h-[300px] md:h-full object-cover" />
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-lg font-regular">Pencil Sharpener</h3>
+                            </div>
+                        </a>
+                    </section>
+
+                    <!-- Coffee Pot -->
+                    <section class="flex flex-col bg-[#F9F6F1] rounded-lg overflow-hidden hover:shadow-lg transition" style="background-color: #F9F6F1;">
+                        <a href="./Projects/CoffeePot/coffeepot.html" class="h-full flex flex-col">
+                            <div class="flex-grow">
+                                <img src="./Projects/CoffeePot/images/cp1.jpg" class="w-full h-[300px] md:h-full object-cover" />
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-lg font-regular">Coffee Pot</h3>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+
+                <!-- Right column sections -->
+                <div class="col-span-1 md:col-span-4 grid grid-cols-1 gap-4">
+                    <!-- Backpack Light -->
+                    <section class="flex flex-col bg-[#F9F6F1] rounded-lg overflow-hidden hover:shadow-lg transition" style="background-color: #F9F6F1;">
+                        <a href="./Projects/Lamp/lamp.html" class="h-full flex flex-col">
+                            <div class="flex-grow">
+                                <img src="./imageHomePage/bLight.svg" class="w-full h-[250px] md:h-full object-cover" />
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-lg font-regular">Backpack Light</h3>
+                            </div>
+                        </a>
+                    </section>
+
+                    <!-- Digital Tools -->
+                    <section class="flex flex-col bg-[#F9F6F1] rounded-lg overflow-hidden hover:shadow-lg transition" style="background-color: #F9F6F1;">
+                        <a href="./Projects/DigitalTools/digitalTools.html" class="h-full flex flex-col">
+                            <div class="flex-grow">
+                                <img src="./Projects/DigitalTools/images/Startside.png" class="w-full h-[250px] md:h-full object-cover" />
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-lg font-regular">Digital Tools in School</h3>
+                            </div>
+                        </a>
+                    </section>
+
+                    <!-- Drawings -->
+                    <section class="flex flex-col bg-[#F9F6F1] rounded-lg overflow-hidden hover:shadow-lg transition" style="background-color: #F9F6F1;">
+                        <a href="./Projects/Drawings/drawings.html" class="h-full flex flex-col">
+                            <div class="flex-grow">
+                                <img src="./Projects/Drawings/images/woman.jpg" class="w-full h-[250px] md:h-full object-cover" />
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-lg font-regular">Drawings</h3>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+
+                <!-- Bottom full-width section -->
+                <section class="col-span-1 md:col-span-12 flex flex-col bg-[#F9F6F1] rounded-lg overflow-hidden hover:shadow-lg transition" style="background-color: #F9F6F1;">
+                    <a href="./Projects/StressFreeExam/stressFreeExam.html" class="h-full flex flex-col">
+                        <div class="flex-grow">
+                            <img src="./Projects/StressFreeExam/images/congrats.jpg" class="w-full h-[250px] md:h-[300px] object-cover" />
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-regular">Stress Free Exam</h3>
+                        </div>
+                    </a>
+                </section>
+            </div>
         </div>
-        <a href="./projects.html" style="background-color:#F3C697" class="px-4 py-3 transition rounded-full
+    </section>
+
+    <div class="w-full py-8 pb-40" style="background-color: #CED09A;">
+        <div class="flex justify-center">
+            <a href="./projects.html" class="px-4 py-3 transition rounded-full
                         rounded-md flex custom-border
                         md:inline-flex font-medium text-lg cursor-pointer
-                        hover:shadow-lg transition">☀ See more projects ☀</a>
+                        hover:shadow-lg transition" >☀ See more projects ☀</a>
+        </div>
     </div>
 
-
-    <footer class="p-4 bg-black shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
-        <span class="text-sm text-white sm:text-center dark:text-gray-400">
+    <footer class="p-4 shadow md:flex md:items-center md:justify-between md:p-6" style="background-color:#A35344">
+        <span class="text-sm text-white sm:text-center">
             💚 Made by Ingvild
         </span>
     </footer>
