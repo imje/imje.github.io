@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Ingvild - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+    <style>
+        .hover-peach:hover {
+            background-color: #F3C697;
+        }
+    </style>
+</head>
+
+<body style="background-color:#fbf6f1" class="flex flex-col min-h-screen">
+
+    <!--Header-->
+
+    <div class="pb-0 pt-4">
+        <div class="container mx-auto flex sm:flex-row flex-col items-center justify-between px-5">
+            <ul class="flex items-center sm:pt-0 pt-5">
+                <li class="pr-4">
+                    <img src="/logo.png" alt="" width="35">
+                </li>
+            </ul>
+            <nav>
+                <ul class="flex items-center sm:pt-0 pt-5">
+                    <li>
+                        <a href="/index.html" class="px-4 py-3 transition 
+                        rounded-md text-lg cursor-pointer
+                        hover-peach hover:shadow-lg 
+                        transition">Home</a> 
+                    </li>
+                    <li>
+                        <a href="/about.html" class="px-4 py-3 transition 
+                        rounded-md text-lg cursor-pointer
+                        hover-peach hover:shadow-lg 
+                        transition">About</a> 
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--Project Header-->
+    
+    <div class="pt-8 lg:pt-16 px-4 mx-auto max-w-screen-md felx items-center">
+        <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Coffe Pot</h2>
+        <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">An aesthetics project</p>     
+    </div>
+
+    <!--Main Photo-->
+
+    <img src="./images/cp1.jpg" width="100%" alt="">
+
+    <!--Project Description-->
+
+    <div style="background-color: #CED09A;" class="py-20 lg:px-20 px-6">
+
+        <h2 class="mb-4 text-2xl tracking-tight font-bold text-left text-gray-900">Project description</h2>
+            <p>
+                The project was to create a coffe pot using a watering can as a totem. You should be able to tell from the different parts of the pot what they are used for.
+            </p>
+    </div>
+
+    <!--Ideation-->
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-40 gap-y-24 place-content-center py-20 lg:px-20 px-6">
+        <div>
+            <h2 class="mb-4 text-2xl tracking-tight font-bold text-left text-gray-900">Ideation</h2>
+            <h3 class="mb-4 text-xl tracking-tight font-bold text-left text-gray-900">The parts</h3>
+            <p>A coffe pot is made up of several parts that shoud each tell a story about what they are used for.
+                <br><br>
+                The handel should signal that it is for holding.
+                <br><br>
+                The spout should signal that it is for pouring.
+                <br><br>
+                The container should signal that it is for storing.
+                <br><br>
+                The top should signal that it is for pouring in liquid.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 gap-x-4 gap-y-4 place-content-center">
+            <img src="./images/cpPrototype.jpg" width="50%" alt=""> 
+        </div>
+            
+        
+
+        <div>
+            <h3 class="mb-4 text-xl tracking-tight font-bold text-left text-gray-900">The handle</h3>
+            <p>
+                The handle is anglet downwards to show a natural grabbing angle for a hand, and to ease pouring. 
+                The triangle shape fits well into a hand, and the edges are rounded to make it comfortable to hold.
+                <br><br>
+            </p>
+        </div>
+        <div>
+            <h3 class="mb-4 text-xl tracking-tight font-bold text-left text-gray-900">The top</h3>
+            <p>
+                The top is shaped like a cone with the large opening at the top to signal that it is a opening for pouring in liquid. 
+                And since it is smaller at the bottom, it signals that the liquid will flow downwards into the container. 
+                The larger opening at the top also eases pouring into the pot.
+                <br><br>
+            </p>
+        </div>
+
+        <div>
+            <h3 class="mb-4 text-xl tracking-tight font-bold text-left text-gray-900">The container</h3>
+            <p>
+                The container is a cylinder with a rounded bottom to signal that it is for storing liquid. 
+                It showns that the containeris solid and stable.
+                <br><br>
+            </p>
+        </div>
+        <div>
+            <h3 class="mb-4 text-xl tracking-tight font-bold text-left text-gray-900">The spout</h3>
+            <p>
+                
+                The spout is a continuation of the handle, and has a opening at the end so show the liquid flowing out.
+                The continuation of the handle signals that it is the end of the cooffee pot "ritual". You start with the handle, then the top and container, and end with the spout.
+                The triangle shape of the spout also signals that the liquid will flow downwards.
+                <br><br>
+            </p>
+        </div>
+        
+    </div>
+
+    <!--The Final Product-->
+
+    <div style="background-color: #CED09A;" class="py-20 lg:px-20 px-6">
+        <h2 class="mb-4 text-2xl tracking-tight font-bold text-left text-gray-900">The prototype</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-40 gap-y-24 place-content-center pt-5 pb-20">
+            <div>
+                <h3 class="mb-4 text-xl tracking-tight font-bold text-left text-gray-900">Material</h3>
+                <p>
+                    We used painted foam and a 3D-printed part.
+                </p>
+            </div>
+            <div>
+                <h3 class="mb-4 text-xl tracking-tight font-bold text-left text-gray-900">Shape and color</h3>
+                <p>
+                    We rounded all the edges to make the shape softer so that it looks more comfortable to hold and use.
+                    We also chose the matte blue color to soften the pot.
+                </p>
+            </div>
+        </div>
+        <img src="./images/cp2.jpg" width="100%" alt="">
+    </br></br></br>
+        <img src="./images/cp1.jpg" width="100%" alt="">
+ 
+    </div>
+
+    <!--Team-->
+
+    <div class="place-content-center pt-10 pb-20 lg:px-20 px-6">
+        <h2 class=" mb-4 text-2xl tracking-tight font-bold text-left text-gray-900">Team</h2>
+
+        <p>
+            This project was done in collaboration with Balder Habberstad Borgen.
+        </p>
+    </div>
+<!--Footer-->
+
+<footer class="p-4 bg-black shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+    <span class="text-sm text-gray-200 sm:text-center dark:text-gray-400">
+        ☀ Check me out on • 
+        <a href="https://www.instagram.com/ingvildlagerting" class="hover:underline" target="_blank" rel="noopener noreferrer">Instagram</a>
+        •
+        <a href="https://www.linkedin.com/in/ingvildmjelva" class="hover:underline" target="_blank" rel="noopener noreferrer">Linkedin</a>
+    </span>
+</footer>
+
+</body>
+
+</html>
