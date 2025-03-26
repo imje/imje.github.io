@@ -6,44 +6,46 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Ingvild - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/logo.png">
+    <style>
+        .hover-peach:hover {
+            background-color: #F3C697;
+        }
+    </style>
 </head>
 
-<body style="background-image: url('/imageHomePage/summer.jpg');">
+<body style="background-color: #fbf6f1;">
 
-    <div class="p-5">
-        <div class="container mx-auto flex sm:flex-row flex-col items-center justify-between">
+    <div class="pb-0 pt-4">
+        <div class="container mx-auto flex sm:flex-row flex-col items-center justify-between px-5">
             <ul class="flex items-center sm:pt-0 pt-5">
                 <li class="pr-4">
                     <img src="/logo.png" alt="" width="35">
-                </li>
-                <li>
-                    <a href="/index.html"> <img src="/imageHomePage/logo.svg" width="208" alt=""></a>
                 </li>
             </ul>
             <nav>
                 <ul class="flex items-center sm:pt-0 pt-5">
                     <li>
-                        <a href="/index.html" class="px-4 py-3 transition 
+                        <a href="../index.html" class="px-4 py-3 transition 
                         rounded-md text-lg cursor-pointer
-                        hover:bg-green-100 hover:shadow-lg 
+                        hover-peach hover:shadow-lg 
                         transition">Home</a> 
                     </li>
                     <li>
-                        <a href="/projects.html" class="px-4 py-3 transition 
+                        <a href="../projects.html" class="px-4 py-3 transition 
                         rounded-md text-lg cursor-pointer
-                        font-bold hover:bg-green-100 hover:shadow-lg 
+                        font-bold hover-peach hover:shadow-lg 
                         transition">Projects</a> 
                     </li>
                     <li>
-                        <a href="/about.html" class="px-4 py-3 transition 
+                        <a href="../about.html" class="px-4 py-3 transition 
                         rounded-md text-lg cursor-pointer
-                        hover:bg-green-100 hover:shadow-lg 
+                        hover-peach hover:shadow-lg 
                         transition">About</a> 
                     </li>
                     <li>
-                        <a href="/contact.html" class="px-4 py-3 transition 
+                        <a href="../contact.html" class="px-4 py-3 transition 
                         rounded-md text-lg cursor-pointer
-                        hover:bg-green-100 hover:shadow-lg 
+                        hover-peach hover:shadow-lg 
                         transition">Contact</a> 
                     </li>
                 </ul>
@@ -58,31 +60,29 @@
         </div>
     </section>  
     
-    <div class="flex items-center justify-center">
+    <div class="flex items-center justify-center pb-8">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-2 place-content-center">
                 <a href="./physical.html" class="px-4 py-2 transition 
-                    rounded-xl text-md cursor-pointer border-2 border-green-500
-                    hover:bg-green-100 hover:shadow-lg text-center
-                    transition">Physical products</a>
-                    <a href="./digital.html" class="px-4 py-2 transition 
-                    rounded-xl text-md cursor-pointer border-2 border-green-500
-                    hover:bg-green-100 hover:shadow-lg text-center
-                    transition">Digital products</a>
-                    <a href="/projects.html" class="px-4 py-2 transition
-                    font-bold bg-green-100 
-                    rounded-xl text-md cursor-pointer border-2 border-green-500
-                    hover:bg-green-100 hover:shadow-lg text-center
-                    transition">Games</a> 
-                    <a href="./draw.html" class="px-4 py-2 transition 
-                    rounded-xl text-md cursor-pointer border-2 border-green-500
-                    hover:bg-green-100  hover:shadow-lg text-center
-                    transition">Drawings</a>
+                rounded-xl text-md cursor-pointer border-2
+                hover:shadow-lg text-center
+                transition hover-peach" style="border-color: #A35344; color: #A35344;">Physical products</a>
+                <a href="./digital.html" class="px-4 py-2 transition 
+                rounded-xl text-md cursor-pointer border-2
+                hover:shadow-lg text-center
+                transition hover-peach" style="border-color: #A35344; color: #A35344;">Digital products</a>
+                <a href="./games.html" class="px-4 py-2 transition 
+                rounded-xl text-md cursor-pointer border-2
+                hover:shadow-lg text-center
+                transition hover-peach" style="border-color: #A35344; color: #A35344; background-color: #F3C697;">Games</a> 
+                <a href="./draw.html" class="px-4 py-2 transition 
+                rounded-xl text-md cursor-pointer border-2
+                hover:shadow-lg text-center
+                transition hover-peach" style="border-color: #A35344; color: #A35344;">Drawings</a>
         </div>
     </div>
 
-    <div class="mx-auto flex flex-col pt-20 pb-20 px-5 items-center justify-center" style="background-image: url('./imageHomePage/summer.jpg');">
+    <div class="mx-auto flex flex-col pt-20 pb-20 px-5 items-center justify-center" style="background-color: #CED09A;">
         <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-x-40 gap-y-24 place-content-center pb-20">
-            <!--
             <a href="/Projects/WhenTheyArrive/whenTheyArrive.html" style="background-color:#fbf6f1" class="w-80 h-80 flex flex-col items-center justify-between rounded-md hover:shadow-lg">
                 <p class="text-xl pt-8 font-bold">When They Arrive</p>
                 <img src="/Projects/WhenTheyArrive/images/mainCharacter.png" class="rounded-b-md h-60 w-full object-cover" />
@@ -91,10 +91,9 @@
                 <p class="text-xl pt-8 font-bold">Temple Trashers</p>
                 <img src="/Projects/TempleTrashers/images/strongman.jpg" class="rounded-b-md h-60 w-full object-cover" />
             </a>
-            -->
         </div>
     </div>
-
+<!--
     <section>
         <div class="mx-auto max-w-screen-md felx items-center">
             <h2 class="mb-4 text-2xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">TBA</h2>
@@ -114,11 +113,7 @@
         </div>
     </section>
 
-    <p>
-        <br><br><br><br>
-    </p>
-
-
+-->
     <footer class="p-4 bg-black shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             💚 Made by Ingvild
